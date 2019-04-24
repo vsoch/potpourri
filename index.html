@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ontology Potpurri</title>     
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="avatar">
+                <img src="http://lorempixel.com/100/100/animals/">
+	    </div>
+	    <input id="search" type="text" placeholder="search" class="bp_form_complete-NBO,ASDPTO,HP-name" required>
+	    <a id="huh" class="huh_link">huh ?</a>
+           <br><br>
+           <div class="boxie hidden" id="boxie">
+               <h3>The Goal</h3>
+               <p>We want to find a standard list (for example, a <a href="http://data.psych.udel.edu/abelcher/Shared%20Documents/2%20Personality,%20Emotion,%20and%20Individual%20Differences%20(17)/Block,%201995.pdf" target="_blank">list of traits </a> such as Allport and Cattell) OR ontology to describe "behavioral phenomena" to add to the Cognitive Atlas. </p>
+              <hr>
+              <h3>My Opinion Thus Far</h3>
+              <p>I am leaning toward existing ontologies because a list of traits may not capture behavioral experiences like preferences or sleep, and further, I can't pin down the ~4500 traits originally filtered by Allport.</p>
+              <hr>
+              <h3>This Interface</h3>
+              <p>My best idea so far is to combine ontologies to derive a useful list. This search box currently includes <a href="http://bioportal.bioontology.org/ontologies/NBO?p=summary" target="_blank">NBO</a>, <a href="http://bioportal.bioontology.org/ontologies/ASDPTO?p=summary" target="_blank">ASDPTO</a>, and <a href="http://bioportal.bioontology.org/ontologies/HP?p=summary" target="_blank">HP</a></p>
+              <hr>
+              <h3>Feedback and Help</h3>
+              <p>What are your thoughts? Please use this box to search for behaviors that come to mind, and let's talk about if there is anything missing. Is there another ontology that would be useful? Is there a list that you know of to help guide us? Any feedback is appreciated!</p> 
+           </div>
+        </div>
+    
+    <script src="js/index.js"></script>
+    <script src="js/form_complete.js"></script>    
+    </body>
+
+
+<script>
+// Show or hide about on click
+$('#huh').click(function() {
+    $('#boxie').toggle();
+});
+</script>
+</html>
